@@ -1,19 +1,19 @@
 1 . Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia. (68)
 
-SELECT *
-FROM `students`
-JOIN `degrees`
-ON `degrees`.`id` = `students`.`degree_id`
+SELECT *  
+FROM `students`  
+JOIN `degrees`  
+ON `degrees`.`id` = `students`.`degree_id`  
 WHERE `degrees`.`name` = "Corso di Laurea in Economia";
 
 ---
 
 2 . Selezionare tutti i Corsi di Laurea del Dipartimento di Neuroscienze. (7)
 
-SELECT *
-FROM `departments`
-JOIN `degrees`
-ON `degrees`.`department_id` = `departments`.`id`
+SELECT *  
+FROM `departments`  
+JOIN `degrees`  
+ON `degrees`.`department_id` = `departments`.`id`  
 WHERE `departments`.`name` = "Dipartimento di Neuroscienze";
 
 ---
